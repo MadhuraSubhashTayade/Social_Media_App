@@ -5,7 +5,7 @@ export const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World</h1>
+          <h1>Cub Social</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
