@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./register.scss";
 
 export const Register = () => {
@@ -12,7 +13,9 @@ export const Register = () => {
             meet new friends, and stay in the loop all in one place.
           </p>
           <span>Already have an account?</span>
-          <button>Login</button>
+          <Link to="/login">
+            <button>Login</button>
+          </Link>
         </div>
         <div className="right">
           <h1>Register</h1>
