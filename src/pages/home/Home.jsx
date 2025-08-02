@@ -1,8 +1,27 @@
-import React from 'react'
-import "./home.scss"
+import React from "react";
+import "./home.scss";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home">
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+    </div>
+  );
+};

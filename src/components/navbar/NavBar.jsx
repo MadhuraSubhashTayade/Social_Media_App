@@ -7,15 +7,23 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
+import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 
 export const NavBar = () => {
+  const { darkMode, toggle } = useContext(DarkModeContext);
   return (
     <div className="navbar">
       <div className="left">
         <Link style={{ textDecoration: "none" }} to="/">
           <span>CubSocial</span>
         </Link>
-        <DarkModeOutlinedIcon />
+        {darkMode ? (
+          <WbSunnyOutlinedIcon onClick={toggle} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggle} />
+        )}
         <HomeOutlinedIcon />
         <AppsOutlinedIcon />
         <div className="search">
