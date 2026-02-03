@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./login.scss";
 
 export const Login = () => {
@@ -5,7 +6,7 @@ export const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World</h1>
+          <h1>Cub Social</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -13,7 +14,9 @@ export const Login = () => {
             and scrambled it to make a type specimen book.
           </p>
           <span>Don't you have an account?</span>
-          <button>Register</button>
+          <Link to="/register">
+            <button>Register</button>
+          </Link>
         </div>
         <div className="right">
           <h1>Login</h1>
